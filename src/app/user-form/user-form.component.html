@@ -1,0 +1,25 @@
+<!-- FILEPATH: /Users/harshal/Data/Test/github-copilot/src/app/user-form/user-form.component.html -->
+
+<form [formGroup]="userForm">
+    <mat-form-field>
+        <mat-label>First Name</mat-label>
+        <input matInput formControlName="firstName" required>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Last Name</mat-label>
+        <input matInput formControlName="lastName" required>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Age</mat-label>
+        <input matInput formControlName="age" required>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Mobile Number</mat-label>
+        <input matInput formControlName="mobileNumber" required>
+    </mat-form-field>
+
+    <button mat-raised-button color="primary" type="submit" (click)="submitForm()">Submit</button>
+</form>
